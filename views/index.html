@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Optimal Sayt</title>
+    <style>
+        /* Asosiy Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #007BFF;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        #ctaButton {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #ctaButton:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .service-item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Xizmatlar</a></li>
+            <li><a href="#">Biz haqimizda</a></li>
+            <li><a href="#">Aloqa</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Yangi Saytga Xush Kelibsiz!</h1>
+        <p>Bizning xizmatlarimizni kashf eting va o'zingizga eng yaxshi variantni tanlang.</p>
+        <button id="ctaButton">Batafsil</button>
+    </section>
+
+    <section class="services">
+        <h2>Xizmatlarimiz</h2>
+        <div class="service-item">
+            <h3>Veb Dizayn</h3>
+            <p>Yuqori sifatli va zamonaviy dizaynlar yaratamiz.</p>
+        </div>
+        <div class="service-item">
+            <h3>SEO Optimallashtirish</h3>
+            <p>Saytingizni Google va boshqa qidiruv tizimlarida yuqori o'rinlarga chiqaramiz.</p>
+        </div>
+        <div class="service-item">
+            <h3>Web Dasturlash</h3>
+            <p>Maxsus ehtiyojlaringizga mos veb ilovalar ishlab chiqamiz.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Optimal Sayt. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<script>
+    // JavaScript: Saytni interaktiv qilish
+    document.getElementById('ctaButton').addEventListener('click', function() {
+        alert('Batafsil ma\'lumot uchun biz bilan bog\'laning!');
+    });
+</script>
+</body>
+</html>

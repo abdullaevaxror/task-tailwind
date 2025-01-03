@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Optimal Sayt</title>
+    <meta name="description" content="To'liq optimallashtirilgan sayt">
+    <meta name="keywords" content="sayt, web dizayn, SEO, mobil dasturlar">
+    <meta name="author" content="Sizning Ismingiz">
+    <title>Sayt Bosh Sahifasi</title>
+
+    <!-- CSS Inline (Optimallashtirilgan) -->
     <style>
-        /* Asosiy Reset */
         * {
             margin: 0;
             padding: 0;
@@ -17,140 +21,215 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
+            color: #333;
         }
 
-        /* Header */
         header {
             background-color: #333;
             color: white;
             padding: 10px 0;
         }
 
-        nav ul {
+        header nav ul {
             list-style: none;
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
 
-        nav ul li {
-            margin: 0 20px;
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
         }
 
-        nav ul li a {
+        header nav ul li a {
             color: white;
             text-decoration: none;
             font-size: 18px;
         }
 
-        /* Hero Section */
         .hero {
-            background-color: #007BFF;
+            background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
             color: white;
-            padding: 50px 0;
             text-align: center;
+            padding: 100px 20px;
         }
 
         .hero h1 {
-            font-size: 36px;
+            font-size: 50px;
+            margin-bottom: 20px;
         }
 
         .hero p {
-            font-size: 18px;
-            margin: 20px 0;
+            font-size: 20px;
+            margin-bottom: 30px;
         }
 
-        #ctaButton {
-            background-color: #FFD700;
-            color: black;
+        .hero .btn-primary {
+            background-color: #ff7f50;
+            padding: 10px 30px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero .btn-primary:hover {
+            background-color: #e06a3d;
+        }
+
+        #services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #services h2 {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        .service-box {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            display: inline-block;
+            width: calc(33% - 40px);
+            text-align: center;
+        }
+
+        .service-box h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact form button {
+            background-color: #4CAF50;
+            color: white;
             padding: 10px 20px;
             border: none;
-            font-size: 16px;
+            border-radius: 5px;
             cursor: pointer;
         }
 
-        #ctaButton:hover {
-            background-color: #ffcc00;
+        #contact form button:hover {
+            background-color: #45a049;
         }
 
-        /* Services Section */
-        .services {
-            display: flex;
-            justify-content: space-around;
-            padding: 40px 20px;
-            background-color: #fff;
-        }
-
-        .service-item {
-            background-color: #f4f4f4;
-            padding: 20px;
-            width: 30%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-item h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        /* Footer */
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #333;
             color: white;
-        }
-
-        footer p {
-            font-size: 14px;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
+
 <body>
+
+<!-- Header -->
 <header>
     <nav>
         <ul>
-            <li><a href="#">Bosh sahifa</a></li>
-            <li><a href="#">Xizmatlar</a></li>
-            <li><a href="#">Biz haqimizda</a></li>
-            <li><a href="#">Aloqa</a></li>
+            <li><a href="#home">Bosh Sahifa</a></li>
+            <li><a href="#services">Xizmatlar</a></li>
+            <li><a href="#about">Biz Haqimizda</a></li>
+            <li><a href="#contact">Aloqa</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <h1>Yangi Saytga Xush Kelibsiz!</h1>
-        <p>Bizning xizmatlarimizni kashf eting va o'zingizga eng yaxshi variantni tanlang.</p>
-        <button id="ctaButton">Batafsil</button>
-    </section>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <h1>Saytingizga Xush Kelibsiz!</h1>
+    <p>To'liq optimallashtirilgan va responsive sayt yaratish uchun biz bilan bog'laning.</p>
+    <a href="#contact" class="btn-primary">Biz bilan bog'lanish</a>
+</section>
 
-    <section class="services">
-        <h2>Xizmatlarimiz</h2>
-        <div class="service-item">
-            <h3>Veb Dizayn</h3>
-            <p>Yuqori sifatli va zamonaviy dizaynlar yaratamiz.</p>
-        </div>
-        <div class="service-item">
-            <h3>SEO Optimallashtirish</h3>
-            <p>Saytingizni Google va boshqa qidiruv tizimlarida yuqori o'rinlarga chiqaramiz.</p>
-        </div>
-        <div class="service-item">
-            <h3>Web Dasturlash</h3>
-            <p>Maxsus ehtiyojlaringizga mos veb ilovalar ishlab chiqamiz.</p>
-        </div>
-    </section>
-</main>
+<!-- Services Section -->
+<section id="services">
+    <h2>Xizmatlarimiz</h2>
+    <div class="service-box">
+        <h3>Web Dizayn</h3>
+        <p>Yangi va zamonaviy dizaynlar yaratamiz.</p>
+    </div>
+    <div class="service-box">
+        <h3>SEO Optimallashtirish</h3>
+        <p>Qidiruv tizimlarida yuqori o'rinlar uchun SEO optimallashtirish xizmatlari.</p>
+    </div>
+    <div class="service-box">
+        <h3>Mobil Dasturlar</h3>
+        <p>Mobil ilovalar va web ilovalar yaratish.</p>
+    </div>
+</section>
 
+<!-- About Section -->
+<section id="about">
+    <h2>Biz Haqimizda</h2>
+    <p>Bizning kompaniya web dizayn, SEO va boshqa xizmatlar bo'yicha tajribali mutaxassislar jamoasiga ega.</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Aloqa</h2>
+    <p>Biz bilan bog'lanish uchun quyidagi formani to'ldiring:</p>
+    <form id="contact-form">
+        <input type="text" name="name" placeholder="Ismingiz" required>
+        <input type="email" name="email" placeholder="Elektron pochta" required>
+        <textarea name="message" placeholder="Xabaringiz" required></textarea>
+        <button type="submit">Yuborish</button>
+    </form>
+</section>
+
+<!-- Footer -->
 <footer>
-    <p>&copy; 2025 Optimal Sayt. Barcha huquqlar himoyalangan.</p>
+    <p>&copy; 2025 Saytingiz nomi. Barcha huquqlar himoyalangan.</p>
 </footer>
 
+<!-- JavaScript Inline (Optimallashtirilgan) -->
 <script>
-    // JavaScript: Saytni interaktiv qilish
-    document.getElementById('ctaButton').addEventListener('click', function() {
-        alert('Batafsil ma\'lumot uchun biz bilan bog\'laning!');
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const name = document.querySelector("[name='name']").value;
+        const email = document.querySelector("[name='email']").value;
+        const message = document.querySelector("[name='message']").value;
+
+        if (name && email && message) {
+            alert(`Formani muvaffaqiyatli yubordingiz, ${name}!`);
+        } else {
+            alert("Iltimos, barcha maydonlarni to'ldiring.");
+        }
     });
 </script>
+
 </body>
+
 </html>
